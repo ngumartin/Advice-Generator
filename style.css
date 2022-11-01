@@ -21,7 +21,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
     background-color: var(--dark-grayish-blue);
-    padding: 1.25rem;
+    padding: 1.50rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,8 +37,9 @@ p {
 
 .container {
     background-color: var(--grayish-blue);
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 2rem;
     border-radius: 1rem;
+    position: relative;
 }
 
 .container h1 {
@@ -55,13 +56,59 @@ p {
 }
 
 .container picture img {
+    background-color: var(--grayish-blue);
+    position: relative;
     margin-bottom: 1rem;
+}
+
+.container picture::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    right: 1.25rem;
+    bottom: 3.8rem;
+    position: absolute;
+    display: block;
+    z-index: 99;
+}
+
+.container picture::after {
+    content: "";
+    width: 45%;
+    height: 1px;
+    background-color: var(--light-cyan);
+    left: 0;
+    bottom: 1.7rem;
+    position: relative;
+    display: block;
+}
+
+.container button {
+    background-color: var(--neon-green);
+    padding: 0.20rem;
+    border: none;
+    border-radius: 15%;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container button:hover {
+    background-color: hsl(152, 100%, 22%);
+}
+
+.dice {
+    width: 35px;
+    height: 35px;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
     color: var(--light-cyan);
 }
 
@@ -74,3 +121,8 @@ p {
     color: hsl(228, 50%, 62%);
 }
 
+@media (min-width: 500px) {
+    .container {
+        max-width: 480px;
+    }
+}

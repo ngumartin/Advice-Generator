@@ -22,19 +22,55 @@ body {
     font-size: 16px;
     background-color: var(--dark-grayish-blue);
     padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.5;
 }
 
 .container {
     background-color: var(--grayish-blue);
     padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.container h1 {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 0.825rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    margin-bottom: 2rem;
+    color: var(--light-cyan);
+}
+
+.container picture img {
+    margin-bottom: 1rem;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 1rem;
+    color: var(--light-cyan);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    transition: color 0.1s ease-in-out;
+}
+
+.attribution a:hover {
+    color: hsl(228, 50%, 62%);
 }
 

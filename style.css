@@ -9,8 +9,8 @@
 :root {
     --light-cyan: hsl(193, 38%, 86%);
     --neon-green: hsl(150, 100%, 66%);
-    --grayish-blue: hsl(217, 19%, 38%);
-    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --grayish-blue: hsl(216, 31%, 62%);
+    --dark-grayish-blue: hsl(216, 29%, 38%);
 }
 
 img {
@@ -20,7 +20,10 @@ img {
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
-    background-color: var(--dark-grayish-blue);
+    /* background-color: var(--dark-grayish-blue); */
+    background-image: url('./images/984389.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 1.50rem;
     text-align: center;
     display: flex;
@@ -85,7 +88,7 @@ p {
 }
 
 .container button {
-    background-color: var(--neon-green);
+    background-color: hsl(150, 52%, 42%);
     padding: 0.20rem;
     border: none;
     border-radius: 15%;
@@ -97,7 +100,7 @@ p {
 }
 
 .container button:hover {
-    background-color: hsl(152, 100%, 22%);
+    background-color: hsl(152, 100%, 50%);
 }
 
 .dice {
